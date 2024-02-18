@@ -13,7 +13,7 @@
 }
 body
 {
-    background-color: black;
+    background: black;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -22,15 +22,29 @@ body
     max-width: 80%;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f8dbff;
-  border-radius: 20px;
+  background: linear-gradient(to right,#dfbdf5,#9de0ff);
+    box-shadow: 0 8px 8px 0 rgba(31, 38, 135, .37);
+    border-radius: 30px;
+    border: 1px solid rgba(255,255, 255, 0.3);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   box-shadow: 2px 2px 4px var(--primary-color);
 }
+.photo
+{
+    display: flex;
+    align-items: flex-end;
+    width: 200px;
+    height: 100%;
+    border-radius: 50%;
+    padding: 6px;
+}
 .profile-name
 {
+    text-shadow: 2px 2px 4px rgba(0,0, 0, 0.2);
+    opacity: 0.7;
+    letter-spacing: 5px;
     font-weight: 200;
     font-size: clamp(1rem,8vw,2rem);
     text-transform: uppercase;
@@ -43,12 +57,16 @@ body
     font-weight: 700;
     border-top: 0.5px solid #727171;
     border-bottom: 0.5px solid #727171;
+    text-shadow: 2px 2px 4px rgba(0,0, 0, 0.2);
     font-size: 1.4rem;
     text-transform: uppercase;
     display: block;
 }
 .header
 {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     width: 100%;
     display: flex;
     align-items: center;
@@ -56,14 +74,10 @@ body
     height: 200px;
     grid-column: 1/-1;
 }
-.h1
-{
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+
 .description
 {
+    font-family: "Poppins", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     color: var(--text-color);
@@ -89,6 +103,7 @@ body
 }
 .title
 {
+    font-family: "Protest Riot",sans-serif;
     border-bottom: 0.5px solid #727171;
     margin-top: 2rem;
     color: var(--primary-color);
