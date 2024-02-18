@@ -1,4 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Riot&display=swap');
+
+
 *{
-    margin: 0;
+    margin-top: 0;
     box-sizing: border-box;
+    padding: 0;
 }
+:root{
+    --primary-color:#81689D;
+    --text-color: #727171;
+}
+body
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container
+{
+    max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8dbff;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.profile-name
+{
+    font-weight: 200;
+    font-size: clamp(1rem,8vw,2rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+.designation
+{
+    color: var(--primary-color);
+    font-weight: 700;
+    border-top: 0.5px solid #727171;
+    border-bottom: 0.5px solid #727171;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    display: block;
+}
+.header
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    grid-column: 1/-1;
+}
+.h1
+{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.description
+{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.content
+{
+    padding: 0;
+    width: 300px;
+}
+.contact-info
+{
+    margin-top: 10px;
+}
+.content p a
+{
+    text-decoration: none;
+    color: inherit;
+}
+.skill-description
+{
+    margin-top: 1rem;
+    line-height: 2;
+}
+.title
+{
+    margin-top: 2rem;
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.percent
+{
+    position: relative;
+    width: 80%;
+    height: 8px;
+    border-radius: 10px;
+    background-color:white;
+    display: block;
+}
+.percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--text-color);
+}
+#list li
+{
+    list-style-type: none;
+}
+.certification .description
+{
+    line-height: 30px;
+}
+#course-name
+{
+    color: black;
+    font-weight:bold;
+}
+
+
+/*.section2
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    height: 200px;
+}
+.section3
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    height: 200px;
+}
+.footer
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    height: 200px;
+}*/
